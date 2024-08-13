@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url(./images/banner-bg.jpg);
+  background-size: cover;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+#head {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  margin: 0 15px;
+  color: white;
+  font-size: 16px;
+  padding: 12px 15px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  border-radius: 50px;
+  background-color: #0863d1;
+}
+
+.signin-btn {
+  background-color: #ee626b;
+  padding: 12px 22px;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.signin-btn:hover {
+  background-color: #0071f8;
+}
+
+.navbar i{
+  display: none;
+  color: white;
+}
+
+.content {
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 80px 0;
+  color: white;
+  line-height: 2;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content p a {
+  color: white;
+}
+
+main {
+  width: 85%;
+  margin: 8% auto;
+}
+
+section .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 10px;
+  background-color: lightgray;
+  padding: 9px 20px;
+  color: black;
+  border-radius: 50px;
+  transition: 0.5s;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.links .active {
+  background-color: #ee626b;
+  color: white;
+}
+
+.links a:hover {
+  background-color: #ee626b;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container a {
+  margin-bottom: 30px;
+  background-color: lightgray;
+  border-radius: 30px;
+  width: 23%;
+  color: black;
+}
+
+#games {
+  position: relative;
+}
+
+#games img {
+  opacity: 0.9;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#games h3 {
+  position: absolute;
+  width: fit-content;
+  padding: 7px 17px;
+  border-radius: 10px;
+  top: 20px;
+  right: 20px;
+  background-color: #0071f8;
+  color: white;
+}
+
+#games p {
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: line-through;
+}
+
+.name {
+  padding: 20px;
+  position: relative;
+}
+
+.name p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.name h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name i {
+  position: absolute;
+  background-color: #ee626b;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  top: 20px;
+  right: 20px;
+}
+
+.container a:hover .name i {
+  background-color: #0071f8;
+}
+
+.container a:hover .name h3 {
+  color: #0071f8;
+}
+
+figcaption {
+  text-align: center;
+  margin: 4% 0;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  margin: 0 5px;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: lightgray;
+  font-weight: 700;
+}
+
+.pagination a.active {
+  background-color: #0071f8;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #0071f8;
+  color: white;
+}
+
+footer {
+  background-image: url(./images/footer-bg.jpg);
+  height: 25vh;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Responsive */
+
+@media all and (max-width: 1100px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container a {
+    width: 31%;
+  }
+}
+
+@media all and (max-width: 990px) {
+  nav ul li a{
+    margin: 0;
+    padding: 12px;
+  }
+
+  .container a {
+    width: 48%;
+  }
+
+  section .links {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 800px){
+  nav ul {
+    display: none;
+  }
+
+  .navbar i{
+    display: block;
+  }
+}
+
+@media all and (max-width: 760px) {
+  header {
+    height: max-content;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .links a {
+    padding: 8px 10px;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .container a {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
